@@ -18,7 +18,7 @@ public class Program {
         System.out.println("How many dollars will be bought? ");
         double value = sc.nextDouble();
 
-        System.out.println("What is the IOF value? ex: 1.07");
+        System.out.println("What is the IOF value? ex: 1.06");
         double priceIof = sc.nextDouble();
 
         double c = Calculator.currencyConverter(priceDollar, value, priceIof);
