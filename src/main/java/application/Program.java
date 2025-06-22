@@ -18,7 +18,10 @@ public class Program {
         System.out.println("How many dollars will be bought? ");
         double value = sc.nextDouble();
 
-        double c = Calculator.currencyConverter(priceDollar, value);
+        System.out.println("What is the IOF value? ex: 1.06");
+        double priceIof = sc.nextDouble();
+
+        double c = Calculator.currencyConverter(priceDollar, value, priceIof);
 
         System.out.printf("Amount to be paid in reais : %.2f%n", c);
 
